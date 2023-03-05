@@ -1,0 +1,21 @@
+body {
+    background: $color-bg;
+    font-family: $font;
+    
+}
+html, body {
+    &._overflow {
+        overflow: hidden;
+    }
+}
+.container {
+    //max-width: 1320px;
+    width: auto;
+    max-width: 100%;
+    background: #FAFBFF;
+    //margin: 0 auto;
+    display: flex;
+    @include tablet {
+        flex-direction: column;
+    }
+}

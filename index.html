@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <sidebar class="sidebar">
+            <a href="#" class="logo">Dashboard</a>
+            <nav class="nav">
+                    <div class="nav__li">
+                        <a href="#" class="nav__a key">Dashboard</a>
+                    </div>
+                    <div class="nav__li">
+                        <a href="#" class="nav__a square">Product</a>
+                    </div> <div class="nav__li">
+                        <a href="#" class="nav__a user">Customers</a>
+                    </div> <div class="nav__li">
+                        <a href="#" class="nav__a wallet">Income</a>
+                    </div> <div class="nav__li">
+                        <a href="#" class="nav__a discount">Promote</a>
+                    </div> <div class="nav__li">
+                        <a href="#" class="nav__a message">Help</a>
+                    </div>
+            </nav>
+            <a href="#" class="account">
+                <div class="account__photo"></div>
+                <div class="account__info">
+                    <div class="account__name">Evano</div>
+                    <div class="account__job">Project Manager</div>
+                </div>
+            </a>
+        </sidebar>
+        <main class="main">
+            <div class="main__hello">Hello Evano 👋🏼,</div>
+            <div class="customers">
+
+                <div class="customers__top">
+                    <div class="customers__allCustomers">
+                        <div class="customers__title">All Customers</div>
+                        <div class="customers__subtitle">Active Members</div>
+                    </div>
+                    <form action="validator.js" method="get">
+                        <div class="customers__icon"></div>
+                        <input type="text" name="text" class="customers__search" placeholder="Search">
+                    </form>
+                </div>
+
+                    <div class="customers__main">
+                            <div class="customers__attributes">
+                                <div class="customers__item">Customer Name</div>
+                                <div class="customers__item">Company</div>
+                                <div class="customers__item">Phone Number</div>
+                                <div class="customers__item">Email</div>
+                                <div class="customers__item">Country</div>
+                                <div class="customers__item">Status</div>
+                            </div>
+                            <div class="box__acc">
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Jane Cooper</div>
+                                    <div class="customers__account-item">Microsoft</div>
+                                    <div class="customers__account-item">(225) 555-0118</div>
+                                    <div class="customers__account-item">jane@microsoft.com</div>
+                                    <div class="customers__account-item">United States</div>
+                                    <div class="btn btn__green">Active</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Floyd Miles</div>
+                                    <div class="customers__account-item">Yahoo</div>
+                                    <div class="customers__account-item">(205) 555-0100</div>
+                                    <div class="customers__account-item">floyd@yahoo.com</div>
+                                    <div class="customers__account-item">Kiribati</div>
+                                    <div class="btn btn__red">Inactive</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Ronald Richards</div>
+                                    <div class="customers__account-item">Adobe</div>
+                                    <div class="customers__account-item">(302) 555-0107</div>
+                                    <div class="customers__account-item">ronald@adobe.com</div>
+                                    <div class="customers__account-item">Israel</div>
+                                    <div class="btn  btn__red">Inactive</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Marvin McKinney</div>
+                                    <div class="customers__account-item">Tesla</div>
+                                    <div class="customers__account-item">(252) 555-0126</div>
+                                    <div class="customers__account-item">marvin@tesla.com</div>
+                                    <div class="customers__account-item">Iran</div>
+                                    <div class="btn btn__green">Active</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Jerome Bell</div>
+                                    <div class="customers__account-item">Google</div>
+                                    <div class="customers__account-item">(629) 555-0129</div>
+                                    <div class="customers__account-item">jerome@google.com</div>
+                                    <div class="customers__account-item">Réunion</div>
+                                    <div class="btn btn__green">Active</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Kathryn Murphy</div>
+                                    <div class="customers__account-item">Microsoft</div>
+                                    <div class="customers__account-item">(406) 555-0120</div>
+                                    <div class="customers__account-item">kathryn@microsoft.com</div>
+                                    <div class="customers__account-item">Curaçao</div>
+                                    <div class="btn btn__green">Active</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Jacob Jones</div>
+                                    <div class="customers__account-item">Yahoo</div>
+                                    <div class="customers__account-item">(208) 555-0112</div>
+                                    <div class="customers__account-item">jacob@yahoo.com</div>
+                                    <div class="customers__account-item">Brazil</div>
+                                    <div class="btn btn__green">Active</div>
+                                </div>
+                                <div class="customers__account">
+                                    <div class="customers__account-item">Kristin Watson</div>
+                                    <div class="customers__account-item">Facebook</div>
+                                    <div class="customers__account-item">(704) 555-0127</div>
+                                    <div class="customers__account-item">kristin@facebook.com</div>
+                                    <div class="customers__account-item">Åland Islands</div>
+                                    <div class="btn btn__red">Inactive</div>
+                                </div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="customers__bottom">
+                        <div class="customers__left">Showing data 1 to 8 of  256K entries</div>
+                        <div class="customers__right">
+                            <a href="#" class="customers__page arrow"></a>
+                            <a href="#" class="customers__page">1</a>
+                            <a href="#" class="customers__page">2</a>
+                            <a href="#" class="customers__page">3</a>
+                            <a href="#" class="customers__page">4</a>
+                            <a href="#" class="customers__page">...</a>
+                            <a href="#" class="customers__page">40</a>
+                            <a href="#" class="customers__page"></a>
+                        </div>
+
+
+                    </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+.sidebar {
+    display: block;
+    max-width: 306px;
+    height: 1198px;
+    //height: 100vh;
+    max-height: 1198px;
+    padding: 36px 28px 78px;
+    background: $color-white;
+    box-shadow: $box-shadow;
+    position: relative;
+    font-style: normal;
+    @include tablet {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+.logo {
+    display: block;
+    margin: 0 0 64px 45px;
+    @include text(600, 26px, 39px, $color-black);
+    letter-spacing: $letter-spacing;
+    position: relative;
+    @include tablet {
+        margin-bottom: 40px;
+    }
+    @include mobile {
+        font-size: 15px;
+    }
+    &::before{
+        content: "";
+        width: 37px;
+        height: 37px;
+        position: absolute;
+        left: -45px;
+        background: url(../img/logo.svg);
+    }
+    &::after {
+        content: "v.01";
+        @include text(500, 10px, 15px, $color-gray);
+        letter-spacing: -0.16px;
+        margin-left: 4px;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    @include tablet-small {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+		
+
+		// .nav__li
+
+		&__li {
+            &:nth-of-type(1):hover a::before {
+                background: url(../img/keyw.svg);
+            }
+            &:nth-of-type(2):hover a::before {
+                background: url(../img/squarew.svg);
+            }
+            &:nth-of-type(3) a{
+                background: $color-violet;
+                color: $color-white;
+                &::after {
+                    background: url(../img/vectorWhite.svg) no-repeat center;
+                }
+            }
+            &:nth-of-type(4):hover a::before {
+                background: url(../img/walletw.svg);
+            }
+            &:nth-of-type(5):hover a::before {
+                background: url(../img/discountw.svg);
+            }
+            &:nth-of-type(6):hover a::before {
+                background: url(../img/messagew.svg);
+            }
+		}
+
+		// .nav__a
+
+		&__a {
+            display: inline-block;
+            width: 100%;
+            padding: 11px 11px 11px 49px;
+            @include text(500, 14px, 21px, $color-sidebar);
+            position: relative;
+            transition: $transition;
+            border-radius: 8px;
+            @include tablet {
+                &::after {
+                    display: none;
+                }
+            }
+            &:hover{
+                background: $color-violet;
+                color: $color-white;
+                &::after {
+                background: url(../img/vectorWhite.svg) no-repeat center;
+                }
+            }
+            &::after {
+                content: "";
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                right: 8px;
+                top: 15px;
+                background: url(../img/vector.svg) no-repeat center;
+
+            }
+            &::before{
+                content: "";
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                left: 11px;
+                bottom: 10px;
+                background: url(../img/css_sprites.png);
+            }
+
+            
+		}
+        & .key {
+            &::before {
+                background-position: -10px -67px;
+            }
+        }
+        & .square {
+            &::before {
+                background-position: -111px -10px;
+            }
+        }
+        & .user {
+            &::before {
+                background-position: -111px -54px;
+            }
+        }
+        & .wallet {
+            &::before {
+                background-position: -10px -111px;
+            }
+        }
+        & .discount {
+            &::before {
+                background-position: -67px -10px;
+            }
+        }
+        & .message {
+            &::before {
+                background-position: -54px -67px;
+            }
+        }
+        
+}
+.account {
+    position: absolute;
+    bottom: 76px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @include tablet {
+        top: -60%;
+        bottom: 0;
+        right: 10px;
+    }
+
+    // .account__photo
+
+    &__photo {
+        width: 42px;
+        height: 42px;
+        background: url(../img/avatar.svg) no-repeat center;
+        background-size: cover
+    }
+
+    // .account__info
+
+    &__info {
+
+    }
+
+    // .account__name
+
+    &__name {
+        @include text(500, 14px, 21px, $color-black);
+        letter-spacing: $letter-spacing;
+    }
+
+    // .account__job
+
+    &__job {
+        @include text(400, 12px, 18px, #757575);
+        letter-spacing: $letter-spacing;
+    }
+}
